@@ -41,5 +41,3 @@ Escreve na memória para forçar o personagem a pular automaticamente (FORCE_JUM
 Em resumo: Se você segura ESPAÇO, o script automaticamente pula assim que o seu personagem encosta no chão
 
 # OS ORGÃOS DA SAÚDE ADVERTEM : NÃO USEM CHEAT EM JOGUINHO ONLINE, É FEIO E NINGUÉM ACHA MANEIRO
-
-Se você segura ESPAÇO, o script automaticamente pula assim que o seu personagem encosta no chão, facilitando bunny hopping. 
