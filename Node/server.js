@@ -8,5 +8,12 @@ const data = JSON.stringify([
     {id: 'B1', name: 'Chocolate Bar', rrp: '22.43', info: 'Delicious overpriced chocolate'}
 ])
 
+const server = createServer((req,res) => {
+    res.setHeader('Access-Control-Allow-origin', '*')
+    res.setHeader('Content-Type', 'application/json')
+    res.end(data)
 
+})
+
+server.listen(3000)
 
