@@ -10,7 +10,13 @@
     </head> 
 
     <body>
-        <nav><button id="fetch">Fetch Products</button></nav>
+        <nav>
+            <select id="category">
+                <option value=" " hidden>Select category</option>
+                <option value="electronics">electronics</option>
+                <option value="confectionery">confectionery</option>
+            </select>
+        </nav>
         <hr>
 
         <div id="products"></div>
@@ -27,9 +33,7 @@
             <details>
                 <summary>
                     <strong>
-                        <slot name="name"></slot>
-
-                    </strong> - <em><slot name="rrp"></slot></em>
+                        <slot name="name"></slot></strong> - <em><slot name="rrp"></slot></em>
                 </summary>
                 <p><slot name="info"></slot></p>
             </details>
