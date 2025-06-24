@@ -5,7 +5,15 @@
     <head>
         <title>My App</title>
         <script type="module" src="app.js"></script>
-        <style>body {background: #fad8d8} </style>
+        
+        <style>
+            body {background: #fad8d8} 
+            #add {margin-top: 1em; width: 20rem; display: none;}
+            #add input {margin-bottom: 0.5em;}
+            [name ="name"], [name = "rrp"] {width: calc(10rem - 10px);}
+            [name = "info"] {width: calc(20rem - 9px);}
+            #add button { font-weight: bold; width: 5em; float: right;}
+        </style>
         
     </head> 
 
@@ -20,6 +28,14 @@
         <hr>
 
         <div id="products"></div>
+        
+        <form id="add">
+            <input name="name" placeholder="name" required>
+            <input name="rrp" placeholder="rrp" type="number" step="0.01" required>
+            <input name="info" placeholder="info" required>
+            <button type="submit">Add</button>
+
+        </form>
 
         <template id="item">
 
